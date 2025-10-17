@@ -1,0 +1,65 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+#calendar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.month {
+  background-color: white;
+  border: 1px solid #ccc;
+  width: 280px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.month h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 18px;
+}
+
+.weekdays, .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-top: 10px;
+}
+
+.weekdays div {
+  font-weight: bold;
+  background-color: #eee;
+  padding: 5px;
+  text-align: center;
+}
+
+.days div {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #f0f0f0;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #eee;
+  font-size: 14px;
+}
