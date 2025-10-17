@@ -57,13 +57,11 @@ function generateCalendar(year) {
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-    // 空白填充
     for (let i = 0; i < firstDay; i++) {
       const emptyDiv = document.createElement("div");
       daysDiv.appendChild(emptyDiv);
     }
 
-    // 日期填充
     for (let day = 1; day <= daysInMonth; day++) {
       const dayDiv = document.createElement("div");
       dayDiv.textContent = day;
@@ -71,7 +69,7 @@ function generateCalendar(year) {
       const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
       if (holidays[dateStr]) {
         dayDiv.style.color = "red";
-        dayDiv.title = holidays[dateStr]; // 滑鼠提示顯示節日名稱
+        dayDiv.title = holidays[dateStr];
       }
 
       daysDiv.appendChild(dayDiv);
