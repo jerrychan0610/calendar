@@ -30,7 +30,7 @@ yearInput.addEventListener("input", () => {
 
 // 背景顏色變更時更新樣式
 bgColorInput.addEventListener("input", () => {
-  document.body.style.backgroundColor = bgColorInput.value;
+  document.documentElement.style.setProperty('--bg-color', bgColorInput.value);
 });
 
 // 生成日曆
