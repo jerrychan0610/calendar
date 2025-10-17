@@ -57,6 +57,11 @@ main {
   border: 1px solid #f0f0f0;
 }
 
+.days div:hover {
+  background-color: #f0f0f0;
+  cursor: default;
+}
+
 footer {
   text-align: center;
   padding: 10px;
