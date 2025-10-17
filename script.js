@@ -1,5 +1,6 @@
 const calendarDiv = document.getElementById("calendar");
 const yearInput = document.getElementById("year");
+const bgColorInput = document.getElementById("bgColor");
 
 // 香港 2025 年公眾假期清單
 const holidays = {
@@ -22,12 +23,17 @@ const holidays = {
   "2025-12-26": "聖誕節後第一個周日"
 };
 
-// 當年份改變時重新生成日曆
+// 年份變更時更新日曆
 yearInput.addEventListener("input", () => {
   generateCalendar(parseInt(yearInput.value));
 });
 
-// 生成整年度日曆
+// 背景顏色變更時更新樣式
+bgColorInput.addEventListener("input", () => {
+  document.body.style.backgroundColor = bgColorInput.value;
+});
+
+// 生成日曆
 function generateCalendar(year) {
   calendarDiv.innerHTML = "";
   const monthNames = ["一月", "二月", "三月", "四月", "五月", "六月",
