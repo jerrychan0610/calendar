@@ -2,14 +2,15 @@ body {
   font-family: "Noto Sans TC", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fff89e; /* 淡黃色背景 */
+  background-color: #fff89e;
   color: #333;
+  transition: background-color 0.3s ease;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #f4c542; /* 深黃色標題區 */
+  background-color: #f4c542;
   color: white;
 }
 
